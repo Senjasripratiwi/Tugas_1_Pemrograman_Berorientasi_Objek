@@ -36,7 +36,35 @@ Diagram UML
 
 ![PBO](https://github.com/Senjasripratiwi/Tugas_1_Pemrograman_Berorientasi_Objek/assets/147185666/2994cc21-5d3c-4f06-b4aa-58a159a62c67)
 
-
-
+Penjelasan Diagram UML
+Kelas OnlineFoodOrderingSystem:
+Deskripsi: Kelas utama yang merepresentasikan sistem pemesanan makanan online.
+Atribut:
+adminCredentials: Map yang menyimpan kredensial admin.
+customerCredentials: Map yang menyimpan kredensial pelanggan.
+orderList: List yang menyimpan daftar pesanan.
+restaurantAddressMap: Map yang menyimpan alamat restoran.
+restaurantFoodMenuMap: Map yang menyimpan menu makanan untuk setiap restoran.
+restaurantDrinkMenuMap: Map yang menyimpan menu minuman untuk setiap restoran.
+scanner: Objek Scanner untuk input pengguna.
+Metode:
+main(String[]): Metode utama yang memulai aplikasi.
+adminLogin(): Metode untuk login sebagai admin.
+customerLogin(): Metode untuk login sebagai pelanggan.
+displayAdminMenu(): Metode untuk menampilkan menu admin.
+displayCustomerMenu(): Metode untuk menampilkan menu pelanggan.
+showRestaurantMenu(): Metode untuk menampilkan daftar restoran dan menu.
+addRestaurant(): Metode untuk menambahkan restoran dan menu.
+deleteRestaurant(): Metode untuk menghapus restoran dan menu.
+createOrder(): Metode untuk membuat pesanan.
+showOrder(): Metode untuk menampilkan pesanan.
+Hubungan dengan Kelas Lain:
+Admin: Sistem menggunakan fungsionalitas dari kelas Admin untuk login admin dan menampilkan menu admin.
+Customer: Sistem menggunakan fungsionalitas dari kelas Customer untuk login pelanggan dan menampilkan menu pelanggan.
+Restaurant: Sistem menggunakan fungsionalitas dari kelas Restaurant untuk menampilkan daftar restoran dan menu.
+Kardinalitas:
+Setiap instance dari OnlineFoodOrderingSystem dapat berinteraksi dengan satu instance admin atau satu instance pelanggan.
+OnlineFoodOrderingSystem dapat menampilkan daftar nol atau lebih instance restoran dan menu.
+Dengan diagram ini, struktur sistem dan interaksi antar kelas dapat lebih mudah dipahami, membantu dalam pengembangan dan pemeliharaan sistem pemesanan makanan online.
 
 
